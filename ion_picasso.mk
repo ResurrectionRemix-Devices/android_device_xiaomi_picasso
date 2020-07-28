@@ -12,10 +12,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/picasso/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/exthm/config/common_full_phone.mk)
+$(call inherit-product, vendor/ion/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := exthm_picasso
+PRODUCT_NAME := ion_picasso
 PRODUCT_DEVICE := picasso
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi K30 5G
@@ -40,3 +40,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="picasso-user 10 QKQ1.191222.002/V12.0.2.0.QGICNXM release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+TARGET_GAPPS_ARCH=arm64
